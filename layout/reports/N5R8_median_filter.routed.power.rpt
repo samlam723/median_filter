@@ -1,0 +1,92 @@
+*----------------------------------------------------------------------------------------
+*	Encounter 14.26-s039_1 (64bit) 07/15/2015 11:34 (Linux 2.6.18-194.el5)
+*	
+*
+* 	Date & Time:	2021-May-27 10:05:05 (2021-May-27 02:05:05 GMT)
+*
+*----------------------------------------------------------------------------------------
+*
+*	Design: median_filter
+*
+*	Liberty Libraries used: 
+*	        /afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib
+*
+*	Power Domain used: 
+*		Rail:        VDD 	Voltage:       0.95 
+*
+*       Power View : analysis_slow
+*
+*       User-Defined Activity : N.A.
+*
+*       Activity File: N.A.
+*
+*       Hierarchical Global Activity: N.A.
+*
+*       Global Activity: N.A.
+*
+*       Sequential Element Activity: N.A.
+*
+*       Primary Input Activity: 0.200000
+*
+*       Default icg ratio: N.A.
+*
+*       Global Comb ClockGate Ratio: N.A.
+*
+*	Power Units = 1mW
+*
+*	Time Units = 1e-09 secs 
+*
+*       report_power -outfile reports/N5R8_median_filter.routed.power.rpt
+*
+-----------------------------------------------------------------------------------------
+
+
+Total Power 
+-----------------------------------------------------------------------------------------
+Total Internal Power:        0.10875931 	   58.4646%
+Total Switching Power:       0.06600399 	   35.4811%
+Total Leakage Power:         0.01126247 	    6.0543%
+Total Power:                 0.18602578 
+-----------------------------------------------------------------------------------------
+
+
+Group                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+Sequential                       0.06605     0.01579    0.003428     0.08526       45.83 
+Macro                                  0           0           0           0           0 
+IO                                     0           0           0           0           0 
+Combinational                    0.03622     0.03656    0.007719      0.0805       43.27 
+Clock (Combinational)            0.00649     0.01366   0.0001149     0.02027       10.89 
+Clock (Sequential)                     0           0           0           0           0 
+-----------------------------------------------------------------------------------------
+Total                             0.1088       0.066     0.01126       0.186         100 
+-----------------------------------------------------------------------------------------
+
+
+Rail                  Voltage   Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+VDD                      0.95     0.1088       0.066     0.01126       0.186         100 
+
+
+Clock                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+clk                              0.00649     0.01366   0.0001149     0.02027       10.89 
+-----------------------------------------------------------------------------------------
+Total (excluding duplicates)     0.00649     0.01366   0.0001149     0.02027       10.89 
+-----------------------------------------------------------------------------------------
+
+
+-----------------------------------------------------------------------------------------
+*	Power Distribution Summary: 
+* 		Highest Average Power:                clk__L2_I1 (CLKBUF_X3): 	  0.004524 
+* 		Highest Leakage Power:                cnt_reg_0_ (DFF_X1): 	 5.444e-05 
+* 		Total Cap: 	2.45725e-12 F
+* 		Total instances in design:   573
+* 		Total instances in design with no power:     0
+*          Total instances in design with no activity:     0
+* 		Total Fillers and Decap:     0
+-----------------------------------------------------------------------------------------
+

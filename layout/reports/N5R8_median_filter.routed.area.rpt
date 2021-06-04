@@ -1,0 +1,8 @@
+Depth  Name                          #Inst  Area (um^2)
+-------------------------------------------------------
+0      median_filter                 573    823.004    
+1      unit_cell_gen_4__unit_cell    107    153.216    
+1      unit_cell_gen_2__unit_cell    107    154.28     
+1      unit_cell_gen_5__unit_cell    109    158.802    
+1      unit_cell_gen_3__unit_cell    107    153.482    
+1      unit_cell_gen_1__unit_cell    109    153.748    

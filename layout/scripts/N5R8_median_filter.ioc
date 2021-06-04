@@ -1,0 +1,54 @@
+################################################################################
+# Filename: divisor.ioc
+# Author: ZHU, Jingyang
+# Email: jzhuak@connect.ust.hk
+# Affiliation: Hong Kong University of Science and Technology
+# ------------------------------------------------------------------------------
+#
+# This file defines the IO location constraint of the divider module. The input
+# pins are allocated at the left and right edge (on Metal 5). The output pins
+# are allocated at the top and bottom edge (on Metal 6). The space between each
+# pin is set as 1.5um. There is an offset of 1um to ensure the module pins do
+# not have any overlap with each other. Each pin dimension is set to be 0.14um x
+# 0.14um.
+#
+# Note: if we do not provide the IO location constraint for our divider module,
+# the Encounter will randomly place our pins.
+################################################################################
+
+(globals
+    version = 3
+    io_order = default
+    space = 1.5
+)
+(iopin
+	(top
+	(pin name="X[0]"	 layer=6 width=0.1400 depth=0.1400 offset=1.0)
+	(pin name="X[1]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="X[2]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="X[3]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="X[4]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="X[5]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="X[6]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="X[7]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="srst"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="clk"	 layer=6 width=0.1400 depth=0.1400 )
+)
+    (left
+	
+    )
+    (right
+	
+    )
+    (bottom
+	(pin name="Y[0]"	 layer=6 width=0.1400 depth=0.1400 offset=1.0)
+	(pin name="Y[1]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="Y[1]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="Y[2]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="Y[3]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="Y[4]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="Y[5]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="Y[6]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="Y[7]"	 layer=6 width=0.1400 depth=0.1400 )
+	)
+)
