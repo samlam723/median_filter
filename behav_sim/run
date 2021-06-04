@@ -1,0 +1,4 @@
+#!/bin/sh
+
+vcs -full64 ../rtl/median_filter.v ../rtl/unit_cell.v median_filter_tb.v +v2k -debug_all -top median_filter_tb \
+  -timescale=1ns/1ps
