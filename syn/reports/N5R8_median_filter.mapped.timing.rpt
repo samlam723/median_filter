@@ -1,0 +1,241 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nets
+        -max_paths 1
+        -transition_time
+Design : median_filter
+Version: I-2013.12-SP5-5
+Date   : Thu May 27 10:11:02 2021
+****************************************
+
+Operating Conditions: slow   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: X[3] (input port clocked by clk)
+  Endpoint: unit_cell_gen_4__unit_cell/P_reg_2_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: REGIN
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  median_filter      5K_hvratio_1_1        NangateOpenCellLibrary
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                                       Fanout     Trans      Incr       Path      Attributes
+  ---------------------------------------------------------------------------------------------------------
+  clock clk (rise edge)                                             0.00       0.00
+  clock network delay (ideal)                                       0.00       0.00
+  input external delay                                              3.60       3.60 f
+  X[3] (in)                                               0.10      0.00       3.60 f
+  X[3] (net)                                   12                   0.00       3.60 f
+  unit_cell_gen_2__unit_cell/X[3] (unit_cell_R_WIDTH8_N5_P_WIDTH3_4)     0.00     3.60 f
+  unit_cell_gen_2__unit_cell/X[3] (net)                             0.00       3.60 f
+  unit_cell_gen_2__unit_cell/U5/ZN (INV_X1)               0.04      0.10       3.70 r
+  unit_cell_gen_2__unit_cell/n80 (net)          1                   0.00       3.70 r
+  unit_cell_gen_2__unit_cell/U97/ZN (NAND2_X1)            0.02      0.06       3.76 f
+  unit_cell_gen_2__unit_cell/n17 (net)          2                   0.00       3.76 f
+  unit_cell_gen_2__unit_cell/U92/ZN (AND3_X1)             0.02      0.14       3.90 f
+  unit_cell_gen_2__unit_cell/n4 (net)           1                   0.00       3.90 f
+  unit_cell_gen_2__unit_cell/U8/ZN (NOR2_X2)              0.06      0.13       4.03 r
+  unit_cell_gen_2__unit_cell/n2 (net)           2                   0.00       4.03 r
+  unit_cell_gen_2__unit_cell/U9/ZN (INV_X1)               0.02      0.05       4.08 f
+  unit_cell_gen_2__unit_cell/n76 (net)          1                   0.00       4.08 f
+  unit_cell_gen_2__unit_cell/U91/ZN (OAI211_X1)           0.08      0.14       4.22 r
+  unit_cell_gen_2__unit_cell/n155 (net)         1                   0.00       4.22 r
+  unit_cell_gen_2__unit_cell/U19/ZN (NAND2_X1)            0.03      0.08       4.29 f
+  unit_cell_gen_2__unit_cell/T (net)            2                   0.00       4.29 f
+  unit_cell_gen_2__unit_cell/U13/ZN (OR2_X1)              0.04      0.21       4.51 f
+  unit_cell_gen_2__unit_cell/T_to_plus1 (net)     2                 0.00       4.51 f
+  unit_cell_gen_2__unit_cell/T_to_plus1 (unit_cell_R_WIDTH8_N5_P_WIDTH3_4)     0.00     4.51 f
+  T_out[2] (net)                                                    0.00       4.51 f
+  unit_cell_gen_3__unit_cell/T_from_minus1 (unit_cell_R_WIDTH8_N5_P_WIDTH3_3)     0.00     4.51 f
+  unit_cell_gen_3__unit_cell/T_from_minus1 (net)                    0.00       4.51 f
+  unit_cell_gen_3__unit_cell/U4/ZN (OR2_X2)               0.03      0.18       4.68 f
+  unit_cell_gen_3__unit_cell/T_to_plus1 (net)     2                 0.00       4.68 f
+  unit_cell_gen_3__unit_cell/T_to_plus1 (unit_cell_R_WIDTH8_N5_P_WIDTH3_3)     0.00     4.68 f
+  T_out[3] (net)                                                    0.00       4.68 f
+  unit_cell_gen_4__unit_cell/T_from_minus1 (unit_cell_R_WIDTH8_N5_P_WIDTH3_2)     0.00     4.68 f
+  unit_cell_gen_4__unit_cell/T_from_minus1 (net)                    0.00       4.68 f
+  unit_cell_gen_4__unit_cell/U87/ZN (INV_X1)              0.05      0.09       4.77 r
+  unit_cell_gen_4__unit_cell/n100 (net)         2                   0.00       4.77 r
+  unit_cell_gen_4__unit_cell/U69/ZN (NAND2_X1)            0.06      0.08       4.85 f
+  unit_cell_gen_4__unit_cell/n132 (net)         3                   0.00       4.85 f
+  unit_cell_gen_4__unit_cell/U17/ZN (INV_X1)              0.04      0.10       4.95 r
+  unit_cell_gen_4__unit_cell/n98 (net)          2                   0.00       4.95 r
+  unit_cell_gen_4__unit_cell/U68/ZN (NOR2_X1)             0.03      0.05       5.00 f
+  unit_cell_gen_4__unit_cell/n151 (net)         2                   0.00       5.00 f
+  unit_cell_gen_4__unit_cell/U6/ZN (AOI22_X1)             0.10      0.19       5.20 r
+  unit_cell_gen_4__unit_cell/n160 (net)         1                   0.00       5.20 r
+  unit_cell_gen_4__unit_cell/U5/ZN (OAI21_X1)             0.03      0.09       5.29 f
+  unit_cell_gen_4__unit_cell/n127 (net)         2                   0.00       5.29 f
+  unit_cell_gen_4__unit_cell/U3/ZN (NOR2_X1)              0.13      0.19       5.48 r
+  unit_cell_gen_4__unit_cell/n116 (net)         3                   0.00       5.48 r
+  unit_cell_gen_4__unit_cell/U7/ZN (NOR2_X1)              0.03      0.07       5.54 f
+  unit_cell_gen_4__unit_cell/n1 (net)           1                   0.00       5.54 f
+  unit_cell_gen_4__unit_cell/U19/ZN (OAI21_X1)            0.07      0.09       5.63 r
+  unit_cell_gen_4__unit_cell/n124 (net)         1                   0.00       5.63 r
+  unit_cell_gen_4__unit_cell/U30/ZN (INV_X1)              0.02      0.05       5.68 f
+  unit_cell_gen_4__unit_cell/n95 (net)          1                   0.00       5.68 f
+  unit_cell_gen_4__unit_cell/U29/ZN (OAI221_X1)           0.12      0.19       5.87 r
+  unit_cell_gen_4__unit_cell/N51 (net)          1                   0.00       5.87 r
+  unit_cell_gen_4__unit_cell/P_reg_2_/D (DFF_X1)          0.12      0.01       5.88 r
+  data arrival time                                                            5.88
+
+  clock clk (rise edge)                                             6.00       6.00
+  clock network delay (ideal)                                       0.00       6.00
+  unit_cell_gen_4__unit_cell/P_reg_2_/CK (DFF_X1)                   0.00       6.00 r
+  library setup time                                               -0.11       5.89
+  data required time                                                           5.89
+  ---------------------------------------------------------------------------------------------------------
+  data required time                                                           5.89
+  data arrival time                                                           -5.88
+  ---------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                  0.01
+
+
+  Startpoint: unit_cell_gen_3__unit_cell/R_reg_3_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Y[3] (output port clocked by clk)
+  Path Group: REGOUT
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  median_filter      5K_hvratio_1_1        NangateOpenCellLibrary
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                                       Fanout     Trans      Incr       Path      Attributes
+  ---------------------------------------------------------------------------------------------------------
+  clock clk (rise edge)                                             0.00       0.00
+  clock network delay (ideal)                                       0.00       0.00
+  unit_cell_gen_3__unit_cell/R_reg_3_/CK (DFF_X1)         0.00      0.00       0.00 r
+  unit_cell_gen_3__unit_cell/R_reg_3_/Q (DFF_X1)          0.10      0.37       0.37 r
+  unit_cell_gen_3__unit_cell/R_to_plus1minus1[3] (net)     6        0.00       0.37 r
+  unit_cell_gen_3__unit_cell/R_to_plus1minus1[3] (unit_cell_R_WIDTH8_N5_P_WIDTH3_3)     0.00     0.37 r
+  Y[3] (net)                                                        0.00       0.37 r
+  Y[3] (out)                                              0.10      0.01       0.38 r
+  data arrival time                                                            0.38
+
+  clock clk (rise edge)                                             6.00       6.00
+  clock network delay (ideal)                                       0.00       6.00
+  output external delay                                            -3.60       2.40
+  data required time                                                           2.40
+  ---------------------------------------------------------------------------------------------------------
+  data required time                                                           2.40
+  data arrival time                                                           -0.38
+  ---------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                  2.02
+
+
+  Startpoint: unit_cell_gen_1__unit_cell/P_reg_1_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: unit_cell_gen_5__unit_cell/P_reg_1_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  median_filter      5K_hvratio_1_1        NangateOpenCellLibrary
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                                       Fanout     Trans      Incr       Path      Attributes
+  ---------------------------------------------------------------------------------------------------------
+  clock clk (rise edge)                                             0.00       0.00
+  clock network delay (ideal)                                       0.00       0.00
+  unit_cell_gen_1__unit_cell/P_reg_1_/CK (DFF_X1)         0.00      0.00       0.00 r
+  unit_cell_gen_1__unit_cell/P_reg_1_/Q (DFF_X1)          0.10      0.36       0.36 r
+  unit_cell_gen_1__unit_cell/P_to_plus1minus1[1] (net)     5        0.00       0.36 r
+  unit_cell_gen_1__unit_cell/U94/ZN (NOR4_X1)             0.03      0.07       0.43 f
+  unit_cell_gen_1__unit_cell/n63 (net)          1                   0.00       0.43 f
+  unit_cell_gen_1__unit_cell/U93/ZN (NOR2_X1)             0.17      0.22       0.66 r
+  unit_cell_gen_1__unit_cell/n41 (net)          4                   0.00       0.66 r
+  unit_cell_gen_1__unit_cell/U92/ZN (INV_X1)              0.05      0.09       0.75 f
+  unit_cell_gen_1__unit_cell/Z_to_plus1 (net)     3                 0.00       0.75 f
+  unit_cell_gen_1__unit_cell/Z_to_plus1 (unit_cell_R_WIDTH8_N5_P_WIDTH3_0)     0.00     0.75 f
+  Z_out[1] (net)                                                    0.00       0.75 f
+  unit_cell_gen_2__unit_cell/Z_from_minus1 (unit_cell_R_WIDTH8_N5_P_WIDTH3_4)     0.00     0.75 f
+  unit_cell_gen_2__unit_cell/Z_from_minus1 (net)                    0.00       0.75 f
+  unit_cell_gen_2__unit_cell/U79/ZN (NOR2_X1)             0.17      0.26       1.01 r
+  unit_cell_gen_2__unit_cell/n127 (net)         4                   0.00       1.01 r
+  unit_cell_gen_2__unit_cell/U78/ZN (INV_X1)              0.05      0.09       1.10 f
+  unit_cell_gen_2__unit_cell/Z_to_plus1 (net)     3                 0.00       1.10 f
+  unit_cell_gen_2__unit_cell/Z_to_plus1 (unit_cell_R_WIDTH8_N5_P_WIDTH3_4)     0.00     1.10 f
+  Z_out[2] (net)                                                    0.00       1.10 f
+  unit_cell_gen_3__unit_cell/Z_from_minus1 (unit_cell_R_WIDTH8_N5_P_WIDTH3_3)     0.00     1.10 f
+  unit_cell_gen_3__unit_cell/Z_from_minus1 (net)                    0.00       1.10 f
+  unit_cell_gen_3__unit_cell/U68/ZN (NOR2_X1)             0.17      0.26       1.35 r
+  unit_cell_gen_3__unit_cell/n126 (net)         4                   0.00       1.35 r
+  unit_cell_gen_3__unit_cell/U75/ZN (INV_X1)              0.05      0.10       1.46 f
+  unit_cell_gen_3__unit_cell/Z_to_plus1 (net)     3                 0.00       1.46 f
+  unit_cell_gen_3__unit_cell/Z_to_plus1 (unit_cell_R_WIDTH8_N5_P_WIDTH3_3)     0.00     1.46 f
+  Z_out[3] (net)                                                    0.00       1.46 f
+  unit_cell_gen_4__unit_cell/Z_from_minus1 (unit_cell_R_WIDTH8_N5_P_WIDTH3_2)     0.00     1.46 f
+  unit_cell_gen_4__unit_cell/Z_from_minus1 (net)                    0.00       1.46 f
+  unit_cell_gen_4__unit_cell/U63/ZN (NOR2_X1)             0.17      0.26       1.71 r
+  unit_cell_gen_4__unit_cell/n133 (net)         4                   0.00       1.71 r
+  unit_cell_gen_4__unit_cell/U24/ZN (INV_X1)              0.05      0.10       1.81 f
+  unit_cell_gen_4__unit_cell/Z_to_plus1 (net)     3                 0.00       1.81 f
+  unit_cell_gen_4__unit_cell/Z_to_plus1 (unit_cell_R_WIDTH8_N5_P_WIDTH3_2)     0.00     1.81 f
+  Z_out[4] (net)                                                    0.00       1.81 f
+  unit_cell_gen_5__unit_cell/Z_from_minus1 (unit_cell_R_WIDTH8_N5_P_WIDTH3_1)     0.00     1.81 f
+  unit_cell_gen_5__unit_cell/Z_from_minus1 (net)                    0.00       1.81 f
+  unit_cell_gen_5__unit_cell/U12/ZN (NOR2_X1)             0.21      0.30       2.11 r
+  unit_cell_gen_5__unit_cell/n138 (net)         5                   0.00       2.11 r
+  unit_cell_gen_5__unit_cell/U30/ZN (INV_X1)              0.05      0.09       2.21 f
+  unit_cell_gen_5__unit_cell/Z_to_plus10 (net)     2                0.00       2.21 f
+  unit_cell_gen_5__unit_cell/U8/ZN (AOI21_X2)             0.13      0.24       2.44 r
+  unit_cell_gen_5__unit_cell/n136 (net)         5                   0.00       2.44 r
+  unit_cell_gen_5__unit_cell/U10/ZN (AND2_X1)             0.19      0.32       2.76 r
+  unit_cell_gen_5__unit_cell/n155 (net)        11                   0.00       2.76 r
+  unit_cell_gen_5__unit_cell/U87/ZN (AOI22_X1)            0.04      0.12       2.88 f
+  unit_cell_gen_5__unit_cell/n120 (net)         1                   0.00       2.88 f
+  unit_cell_gen_5__unit_cell/U33/ZN (OAI21_X1)            0.15      0.13       3.01 r
+  unit_cell_gen_5__unit_cell/n131 (net)         3                   0.00       3.01 r
+  unit_cell_gen_5__unit_cell/U25/ZN (INV_X1)              0.04      0.07       3.08 f
+  unit_cell_gen_5__unit_cell/n103 (net)         2                   0.00       3.08 f
+  unit_cell_gen_5__unit_cell/U72/ZN (NAND3_X1)            0.04      0.09       3.17 r
+  unit_cell_gen_5__unit_cell/n123 (net)         1                   0.00       3.17 r
+  unit_cell_gen_5__unit_cell/U90/ZN (OAI221_X1)           0.04      0.09       3.26 f
+  unit_cell_gen_5__unit_cell/N50 (net)          1                   0.00       3.26 f
+  unit_cell_gen_5__unit_cell/P_reg_1_/D (DFF_X1)          0.04      0.01       3.27 f
+  data arrival time                                                            3.27
+
+  clock clk (rise edge)                                             6.00       6.00
+  clock network delay (ideal)                                       0.00       6.00
+  unit_cell_gen_5__unit_cell/P_reg_1_/CK (DFF_X1)                   0.00       6.00 r
+  library setup time                                               -0.17       5.83
+  data required time                                                           5.83
+  ---------------------------------------------------------------------------------------------------------
+  data required time                                                           5.83
+  data arrival time                                                           -3.27
+  ---------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                  2.56
+
+
+1

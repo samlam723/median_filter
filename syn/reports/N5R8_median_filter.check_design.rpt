@@ -1,0 +1,76 @@
+ 
+****************************************
+check_design summary:
+Version:     I-2013.12-SP5-5
+Date:        Thu May 27 10:10:55 2021
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Cells                                                              29
+    Cells do not drive (LINT-1)                                     3
+    Connected to power or ground (LINT-32)                         13
+    Nets connected to multiple pins on same cell (LINT-33)         13
+
+Nets                                                                2
+    Unloaded nets (LINT-2)                                          2
+--------------------------------------------------------------------------------
+
+Warning: In design 'median_filter', cell 'C42' does not drive any nets. (LINT-1)
+Warning: In design 'unit_cell_R_WIDTH8_N5_P_WIDTH3', cell 'C279' does not drive any nets. (LINT-1)
+Warning: In design 'unit_cell_R_WIDTH8_N5_P_WIDTH3', cell 'C280' does not drive any nets. (LINT-1)
+Warning: In design 'median_filter', net 'T_out[5]' driven by pin 'unit_cell_gen[5].unit_cell/T_to_plus1' has no loads. (LINT-2)
+Warning: In design 'median_filter', net 'Z_out[5]' driven by pin 'unit_cell_gen[5].unit_cell/Z_to_plus1' has no loads. (LINT-2)
+Warning: In design 'median_filter', a pin on submodule 'unit_cell_gen[1].unit_cell' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Z_from_minus1' is connected to logic 0. 
+Warning: In design 'median_filter', a pin on submodule 'unit_cell_gen[1].unit_cell' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'T_from_minus1' is connected to logic 0. 
+Warning: In design 'median_filter', a pin on submodule 'unit_cell_gen[5].unit_cell' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'R_from_plus1[7]' is connected to logic 0. 
+Warning: In design 'median_filter', a pin on submodule 'unit_cell_gen[5].unit_cell' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'R_from_plus1[6]' is connected to logic 0. 
+Warning: In design 'median_filter', a pin on submodule 'unit_cell_gen[5].unit_cell' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'R_from_plus1[5]' is connected to logic 0. 
+Warning: In design 'median_filter', a pin on submodule 'unit_cell_gen[5].unit_cell' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'R_from_plus1[4]' is connected to logic 0. 
+Warning: In design 'median_filter', a pin on submodule 'unit_cell_gen[5].unit_cell' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'R_from_plus1[3]' is connected to logic 0. 
+Warning: In design 'median_filter', a pin on submodule 'unit_cell_gen[5].unit_cell' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'R_from_plus1[2]' is connected to logic 0. 
+Warning: In design 'median_filter', a pin on submodule 'unit_cell_gen[5].unit_cell' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'R_from_plus1[1]' is connected to logic 0. 
+Warning: In design 'median_filter', a pin on submodule 'unit_cell_gen[5].unit_cell' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'R_from_plus1[0]' is connected to logic 0. 
+Warning: In design 'median_filter', a pin on submodule 'unit_cell_gen[5].unit_cell' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'P_from_plus1[2]' is connected to logic 0. 
+Warning: In design 'median_filter', a pin on submodule 'unit_cell_gen[5].unit_cell' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'P_from_plus1[1]' is connected to logic 0. 
+Warning: In design 'median_filter', a pin on submodule 'unit_cell_gen[5].unit_cell' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'P_from_plus1[0]' is connected to logic 0. 
+Warning: In design 'median_filter', the same net is connected to more than one pin on submodule 'unit_cell_gen[1].unit_cell'. (LINT-33)
+   Net 'R_out[1][7]' is connected to pins 'R_from_minus1[7]', 'R_to_plus1minus1[7]''.
+Warning: In design 'median_filter', the same net is connected to more than one pin on submodule 'unit_cell_gen[1].unit_cell'. (LINT-33)
+   Net 'R_out[1][6]' is connected to pins 'R_from_minus1[6]', 'R_to_plus1minus1[6]''.
+Warning: In design 'median_filter', the same net is connected to more than one pin on submodule 'unit_cell_gen[1].unit_cell'. (LINT-33)
+   Net 'R_out[1][5]' is connected to pins 'R_from_minus1[5]', 'R_to_plus1minus1[5]''.
+Warning: In design 'median_filter', the same net is connected to more than one pin on submodule 'unit_cell_gen[1].unit_cell'. (LINT-33)
+   Net 'R_out[1][4]' is connected to pins 'R_from_minus1[4]', 'R_to_plus1minus1[4]''.
+Warning: In design 'median_filter', the same net is connected to more than one pin on submodule 'unit_cell_gen[1].unit_cell'. (LINT-33)
+   Net 'R_out[1][3]' is connected to pins 'R_from_minus1[3]', 'R_to_plus1minus1[3]''.
+Warning: In design 'median_filter', the same net is connected to more than one pin on submodule 'unit_cell_gen[1].unit_cell'. (LINT-33)
+   Net 'R_out[1][2]' is connected to pins 'R_from_minus1[2]', 'R_to_plus1minus1[2]''.
+Warning: In design 'median_filter', the same net is connected to more than one pin on submodule 'unit_cell_gen[1].unit_cell'. (LINT-33)
+   Net 'R_out[1][1]' is connected to pins 'R_from_minus1[1]', 'R_to_plus1minus1[1]''.
+Warning: In design 'median_filter', the same net is connected to more than one pin on submodule 'unit_cell_gen[1].unit_cell'. (LINT-33)
+   Net 'R_out[1][0]' is connected to pins 'R_from_minus1[0]', 'R_to_plus1minus1[0]''.
+Warning: In design 'median_filter', the same net is connected to more than one pin on submodule 'unit_cell_gen[1].unit_cell'. (LINT-33)
+   Net 'P_out[1][2]' is connected to pins 'P_from_minus1[2]', 'P_to_plus1minus1[2]''.
+Warning: In design 'median_filter', the same net is connected to more than one pin on submodule 'unit_cell_gen[1].unit_cell'. (LINT-33)
+   Net 'P_out[1][1]' is connected to pins 'P_from_minus1[1]', 'P_to_plus1minus1[1]''.
+Warning: In design 'median_filter', the same net is connected to more than one pin on submodule 'unit_cell_gen[1].unit_cell'. (LINT-33)
+   Net 'P_out[1][0]' is connected to pins 'P_from_minus1[0]', 'P_to_plus1minus1[0]''.
+Warning: In design 'median_filter', the same net is connected to more than one pin on submodule 'unit_cell_gen[1].unit_cell'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'Z_from_minus1', 'T_from_minus1''.
+Warning: In design 'median_filter', the same net is connected to more than one pin on submodule 'unit_cell_gen[5].unit_cell'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'R_from_plus1[7]', 'R_from_plus1[6]'', 'R_from_plus1[5]', 'R_from_plus1[4]', 'R_from_plus1[3]', 'R_from_plus1[2]', 'R_from_plus1[1]', 'R_from_plus1[0]', 'P_from_plus1[2]', 'P_from_plus1[1]', 'P_from_plus1[0]'.
+1

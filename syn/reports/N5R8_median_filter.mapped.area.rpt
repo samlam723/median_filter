@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : median_filter
+Version: I-2013.12-SP5-5
+Date   : Thu May 27 10:11:02 2021
+****************************************
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.db)
+
+Number of ports:                           18
+Number of nets:                           106
+Number of cells:                           33
+Number of combinational cells:             24
+Number of sequential cells:                 4
+Number of macros/black boxes:               0
+Number of buf/inv:                          3
+Number of references:                      17
+
+Combinational area:                535.192001
+Buf/Inv area:                       53.732000
+Noncombinational area:             289.407990
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                   824.599991
+Total area:                 undefined
+1
