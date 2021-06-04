@@ -1,4 +1,3 @@
-# 1D Median filter
 EESM 5020 Course Project - 1D Median Filter
 ===============================================
 Click below to see the project report\
